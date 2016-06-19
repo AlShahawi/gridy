@@ -1,0 +1,35 @@
+/*
+ * Author: Ahmed Al-Shahawi
+ * Website: https://alshahawi.github.io
+ * Email: alshahawi@outlook.com
+*/
+.row {
+	border: 3px dashed black;
+}
+
+[class*="col-"] {
+	border: 1px dashed red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#ruler-info::after { content: "Default View"; }
+
+/* Extra small devices <768px (Phones) */
+@media screen and (max-width: 768px) {
+	#ruler-info::after { content: "Extra Small"; }
+}
+
+/* Small devices >768px (Tablets) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	#ruler-info::after { content: "Small"; }
+}
+
+/* Medium devices >=992px (Desktops) */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+	#ruler-info::after { content: "Medium"; }
+}
+/* Large devices >=1200px (Large Desktops) */
+@media screen and (min-width: 1200px) {
+	#ruler-info::after { content: "Large"; }
+}
